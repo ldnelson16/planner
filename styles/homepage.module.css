@@ -1,0 +1,22 @@
+.body{
+  position: absolute;
+  background-image: url('../materials/images/mountainbackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+.centerbox{
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%; /* Set the width of your div */
+  height: 70%; /* Set the height of your div */
+  background-color: rgba(1000, 1000, 1000, 0.25);
+}
+.loginheading{
+  position: relative;
+}
