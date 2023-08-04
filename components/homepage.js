@@ -9,8 +9,15 @@ export default function HomePage(){
     <>
       <div className={styles.body}>
         <div className={styles.centerbox}>
-          <div className={styles.loginheading}>
-            
+          <div className={styles.loginside}>
+            <div className={styles.loginheading}>
+              <span className={textstyles.heading}>Log In</span>
+            </div>
+          </div>
+          <div className={styles.signinside}>
+            <div className={styles.loginheading}>
+              <span className={textstyles.heading}>Sign Up</span>
+            </div>
           </div>
         </div>
       </div>

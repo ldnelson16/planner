@@ -1,4 +1,4 @@
-.body{
+.body {
   position: absolute;
   background-image: url('../materials/images/mountainbackground.jpg');
   background-size: cover;
@@ -7,16 +7,40 @@
   height: 100%;
   width: 100%;
 }
-.centerbox{
+
+.centerbox {
   position: absolute;
   display: flex;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%; /* Set the width of your div */
-  height: 70%; /* Set the height of your div */
+  width: 60%;
+  height: 70%;
   background-color: rgba(1000, 1000, 1000, 0.25);
 }
-.loginheading{
+
+.loginside {
   position: relative;
+  width: 50%;
+  height: 100%;
+  border-right: 2px dashed rgba(1000, 1000, 1000, 0.25);
+}
+
+.signinside {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.loginheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(1000, 1000, 500, 0.5);
+  left: 5%;
+  top: 3%;
+  width: 90%;
+  height: 15%;
+  border-radius: 125px;
 }
