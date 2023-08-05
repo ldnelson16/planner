@@ -33,6 +33,13 @@
   height: 100%;
 }
 
+.namediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
 .loginheading {
   display: flex;
   align-items: center;
@@ -67,12 +74,63 @@
   text-align: center;
   color:rgba(50, 50, 500, 0.5);
   font-size: 1.1em;
+  font-weight: bold;
+}
+
+.input2{
+  padding: 0px;
+  border-radius: 5px;
+  background-color: rgba(500, 500, 500, 0.7);
+  height: 40px;
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  color:rgba(50, 50, 500, 0.5);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.input3{
+  padding: 0px;
+  border-radius: 5px;
+  background-color: rgba(500, 500, 500, 0.7);
+  height: 40px;
+  margin: 30px 2% 0px 2%;
+  width: 37%;
+  text-align: center;
+  color:rgba(50, 50, 500, 0.5);
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .input::placeholder{
   line-height: 60px;
   text-align: center;
   font-size: 1.15em;
+  font-weight: normal;
+}
+
+.input2::placeholder{
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.15em;
+  font-weight: normal;
+}
+
+.input3::placeholder{
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.15em;
+  font-weight: normal;
+}
+
+.yellowsigninbutton {
+  width: 80%;
+  background-color: rgba(233, 202, 9, 0.6);
+  margin: 40px;
+  border-radius: 25px;
+  height: 40px;
+  box-shadow: 0px 3px 0px rgba(50, 50, 500, 0.1);
 }
 
 .signinbutton {
@@ -90,3 +148,8 @@
   box-shadow: 0px 3px 0px rgba(50, 50, 500, 0.3);
 }
  
+.yellowsigninbutton:hover {
+  background-color: rgba(233, 202, 9, 0.75);
+  border: 1px solid rgba(233, 202, 9, 1);
+  box-shadow: 0px 3px 0px rgba(232, 202, 9, 0.3);
+}

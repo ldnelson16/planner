@@ -24,6 +24,13 @@ export default function HomePage(){
               <div className={styles.loginheading}>
                 <span className={textstyles.heading}>Sign Up</span>
               </div>
+              <div className={styles.namediv}>
+                <input type="text" className={styles.input3} placeholder="first name"></input>
+                <input type="text" className={styles.input3} placeholder="last name"></input>
+              </div>
+              <input type="text" className={styles.input2} placeholder='username'></input>
+              <input type="password" className={styles.input2} placeholder='password'></input>
+              <button className={styles.yellowsigninbutton}>Sign Up</button>
             </div>
           </div>
         </div>
