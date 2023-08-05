@@ -2,9 +2,16 @@
 import styles from '../styles/homepage.module.css';
 import textstyles from '../styles/texts.module.css';
 import Link from 'next/link';
+import {useState} from 'react';
 
 //export default 
 export default function HomePage(){
+  //Event listeners / onClick / onLoad / onChange functions
+  const login = () => {
+    console.log("Button clicked");
+  }
+  //useStates
+  const [username,setUsername] = useState("");
   return(
     <>
       <div className={styles.body}>
@@ -14,9 +21,9 @@ export default function HomePage(){
               <div className={styles.loginheading}>
                 <text className={textstyles.heading}>Log In</text>
               </div>
-              <input type="text" className={styles.input} placeholder='username'></input>
-              <input type="password" className={styles.input} placeholder='password'></input>
-              <button className={styles.signinbutton}>Log In</button>
+              <input name="username" type="text" className={styles.input} placeholder='username'></input>
+              <input name="password" type="password" className={styles.input} placeholder='password'></input>
+              <button type="submit" className={styles.signinbutton}>Log In</button>
             </div>
           </div>
           <div className={styles.signinside}>
