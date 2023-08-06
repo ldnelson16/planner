@@ -6,7 +6,7 @@ import {useState} from 'react';
 
 //export default 
 export default function HomePage(){
-  //Event listeners / onClick / onLoad / onChange functions
+  //Event listeners
   const login = () => {
     console.log("Looking for username/password pair");
     //Check database for u/p pair
@@ -21,14 +21,30 @@ export default function HomePage(){
     setPassword(event.target.value);
     console.log(password);
   }
+  const handleSUHover = () => {
+    setSUHoverState(true);
+    console.log("Mouse Entered Sign Up Box");
+  }
+  const handleSULeave = () => {
+    setSUHoverState(false);
+    console.log("Mouse Left Sign Up Box");
+  }
   //useStates
+  const [signuphover,setSUHoverState] = useState(false);
   const [username,setUsername] = useState(0);
   const [password,setPassword] = useState(0);
+  //variable CSS states
+  const logindiv = {
+    display: signuphover?"flex":"none"
+  };
+  const signindiv = {
+    display: signuphover?"none":"flex"
+  }
 
   return(
     <>
       <div className={styles.body}>
-        <div className={styles.centerbox}>
+        <div onMouseLeave={handleSULeave} className={styles.centerbox}>
           <div className={styles.loginside}>
             <div className={styles.login}>
               <div className={styles.loginheading}>
@@ -39,6 +55,7 @@ export default function HomePage(){
               <button type="submit" className={styles.signinbutton} onClick={login}>Log In</button>
             </div>
           </div>
+          <div onMouseEnter={handleSULeave} style={logindiv} className={styles.loginsidecover}><span className={textstyles.h1}>Log In</span></div>
           <div className={styles.signinside}>
             <div className={styles.login}>
               <div className={styles.loginheading}>
@@ -53,6 +70,7 @@ export default function HomePage(){
               <button className={styles.yellowsigninbutton}>Sign Up</button>
             </div>
           </div>
+          <div onMouseEnter={handleSUHover} style={signindiv} className={styles.signinsidecover}><span className={textstyles.h1}>Sign Up</span></div>
         </div>
       </div>
     </>
