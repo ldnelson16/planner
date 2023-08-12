@@ -1,0 +1,4 @@
+{
+  "usernames":["abc","def"],
+  "key_pairs":{"abc":{"password":"123","fname":"Derrick","lname":"Connors"},"def":{"password":"456","fname":"Carter","lname":"Pikachu"}}
+}

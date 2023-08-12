@@ -28,7 +28,7 @@
 }
 
 .loginsidecover{
-  background-color: rgba(0,0,0,0.76);
+  background-color: rgba(0,0,0,0.24);
   position: absolute;
   width: 50%;
   height: 100%;
@@ -45,7 +45,7 @@
 }
 
 .signinsidecover{
-  background-color: rgba(0,0,0,0.76);
+  background-color: rgba(0,0,0,0.24);
   position: absolute;
   margin-left: 50%;
   width: 50%;
