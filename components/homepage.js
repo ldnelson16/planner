@@ -4,7 +4,6 @@ import textstyles from '../styles/texts.module.css';
 import Link from 'next/link';
 import {useState} from 'react';
 import updata from '../data/upkeys.json';
-//import fs from 'fs';
 
 //export default 
 export default function HomePage(){
